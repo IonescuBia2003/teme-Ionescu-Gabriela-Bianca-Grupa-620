@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('cef2c2c2-7405-4b61-b2e5-c5204ad2dc3f.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+}
+
+  .container1
+  {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 25px; 
+    height: 250px;
+  width:200px;
+    margin-top:100px;
+  }
+  .container2
+  {
+    
+    text-align: center ;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px; 
+    height: 250px; 
+    width: 200px;
+    margin-top:100px;
+      }
+  .container3 {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left:16px; 
+    height: 250px;
+  width: 200px;
+    margin-top:100px;
+  }
+
+  
+  .container1 img,
+  .container2 img,
+  .container3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .container1 .text-row1 {
+    font-family: 'Khand',sans-serif;
+    color:#9d9d9d;
+    font-weight:760;
+    font-size:16x;
+  }
+  
+  .container1 .text-row2 {
+    font-family:'Khand',sans-serif;
+    color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+  }
+  .container1 .text-row3 {
+    font-family: 'Khand',sans-serif;
+     color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+    margin:-12px;
+  }
+  .container2 .text-row1 {
+    font-family: 'Khand',sans-serif;
+    color:#9d9d9d;
+    font-weight:760;
+    font-size:16x;
+  }
+  
+  .container2 .text-row2 {
+    font-family: 'Khand',sans-serif;
+     color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+  }
+  .container2 .text-row3 {
+    font-family: 'Khand',sans-serif;
+     color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+    margin:-12px;
+  }
+  .container3 .text-row1 {
+    font-family: 'Khand',sans-serif;
+    color:#9d9d9d;
+    font-weight:760;
+    font-size:16x;
+    margin:25px;
+  }
+  
+  .container3 .text-row2 {
+    font-family: 'Khand',sans-serif;
+     color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+    margin:-8px
+    
+  }
+  
+  .container3 .text-row3 {
+    font-family: 'Khand',sans-serif;
+     color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+    margin:-14x;
+     
+  }
+  .container3 .text-row4 {
+    font-family: 'Khand',sans-serif;
+     color:#c2c2c2;
+    font-weight:600;
+    font-size:12px;
+    margin:-8px;
+    
+  }
+    .container3 .text-row5 {
+        font-family: 'Khand',sans-serif;
+         color:#c2c2c2;
+        font-weight:600;
+        font-size:12px;
+      margin:px;}
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px; /* SpaÈ›iu Ã®ntre fraze È™i containere */
+    
+  }
+.title {
+  text-align: center;
+  margin-bottom: 400px;
+}
+
+/* Stiluri pentru frazele deasupra containerelor */
+.title .phrase1
+{
+  display: block;
+  font-size: 50px;
+  font-weight:650;
+  color: white;
+  text-align: center;
+  margin-right:-1500px;
+  margin-bottom: 10px;
+}
+.title .phrase2 {
+  display: block;
+  font-size: 24px;
+  font-weight:550;
+  color: white;
+  text-align: center;
+
+  margin-right:-1500px;
+}
