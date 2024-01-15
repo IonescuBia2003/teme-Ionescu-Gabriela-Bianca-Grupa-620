@@ -1,0 +1,54 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  color: #aa1b1b;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #e6baba;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Aliniere text stânga */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: rgb(142, 2, 2);
+}
+
+input[type="submit"] {
+  background-color: #8f0000;
+  color: #fbfbfb;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ca6e93;
+}

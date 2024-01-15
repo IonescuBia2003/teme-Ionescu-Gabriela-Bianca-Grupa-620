@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formular de Înregistrare</title>
+  <link rel="stylesheet" href="exercitiu2.css">
+
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <h2>Formular de Înregistrare</h2>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span><br>
+
+    <label for="password">Parolă:</label>
+    <input type="password" id="password" name="password" required>
+    <span id="passwordError" class="error"></span><br>
+
+    <label for="confirmPassword">Confirmare Parolă:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <span id="confirmPasswordError" class="error"></span><br>
+
+    <input type="submit" value="Înregistrare">
+  </form>
+
+  <script>
+    function validateForm() {
+      // Resetarea mesajelor de eroare
+      document.getElementById('emailError').innerHTML = '';
+      document.getElementById('passwordError').innerHTML = '';
+      document.getElementById('confirmPasswordError').innerHTML = '';
+
+      // Validare E-mail
+      var email = document.getElementById('email').value;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        document.getElementById('emailError').innerHTML = 'E-mail invalid';
+        return false;
+      }
+
+      // Validare Parolă
+      var password = document.getElementById('password').value;
+      var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+      if (!passwordRegex.test(password)) {
+        document.getElementById('passwordError').innerHTML = 'Parolă invalidă. Parola trebuie să conțină cel puțin 8 caractere, o literă mică, o literă mare și un număr.';
+        return false;
+      }
+
+      // Confirmare Parolă
+      var confirmPassword = document.getElementById('confirmPassword').value;
+      if (password !== confirmPassword) {
+        document.getElementById('confirmPasswordError').innerHTML = 'Parolele nu corespund';
+        return false;
+      }
+
+      // Formular validat cu succes
+      alert('Formularul este valid! Puteți continua cu înregistrarea.');
+      return true;
+    }
+  </script>
+
+</body>
+</html>
